@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МеКаМинефть</title>
+
+    
+    <link rel="stylesheet" href="css/simpleLighbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="scrollbar">
+        <button class="scrollbar__up">
+            <svg
+            version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="arrow-layer">
+                <path d="M70.787,27.267v8.294c0,0.571-0.305,1.1-0.8,1.385L49.776,48.615c-1.066,0.616-1.066,2.155,0,2.771l20.212,11.669   c0.495,0.286,0.8,0.814,0.8,1.385v8.294c0,1.231-1.333,2.001-2.399,1.385L29.013,51.385c-1.066-0.616-1.066-2.155,0-2.771   l39.375-22.733C69.454,25.266,70.787,26.035,70.787,27.267z"/>
+                <path d="M69.987,63.055l-2.376-1.372c-0.013,0.043-0.023,0.09-0.032,0.136l0.409,0.236c0.495,0.286,0.8,0.814,0.8,1.385v8.294   c0,1.008-0.894,1.693-1.803,1.575l1.404,0.81c1.066,0.616,2.399-0.154,2.399-1.385V64.44C70.787,63.868,70.482,63.34,69.987,63.055   z"/>
+                <path d="M49.776,48.615l20.212-11.669c0.495-0.286,0.8-0.814,0.8-1.385v-8.294c0-1.115-1.092-1.84-2.091-1.512   c0.054,0.16,0.091,0.328,0.091,0.512v8.294c0,0.571-0.305,1.1-0.8,1.385L47.776,47.615c-0.078,0.052-0.745,0.516-0.8,1.385   c-0.057,0.911,0.609,1.467,0.673,1.518c0.639,0.443,1.277,0.885,1.916,1.328c-0.032-0.112-0.07-0.312,0.019-0.51   c0.011-0.025,0.024-0.049,0.037-0.07C48.725,50.593,48.768,49.196,49.776,48.615z"/>
+                <path d="M70.787,27.267v8.294c0,0.571-0.305,1.1-0.8,1.385L49.776,48.615   c-1.066,0.616-1.066,2.155,0,2.771l20.212,11.669c0.495,0.286,0.8,0.814,0.8,1.385v8.294c0,1.231-1.333,2.001-2.399,1.385   L29.013,51.385c-1.066-0.616-1.066-2.155,0-2.771l39.375-22.733C69.454,25.266,70.787,26.035,70.787,27.267z" />
+            </g>
+            </svg>
+        </button>
+        <div class="scrollbar__sections">
+        </div>
+            
+        
+        <button class="scrollbar__down">
+            <svg
+version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="arrow-layer">
+    <path d="M70.787,27.267v8.294c0,0.571-0.305,1.1-0.8,1.385L49.776,48.615c-1.066,0.616-1.066,2.155,0,2.771l20.212,11.669   c0.495,0.286,0.8,0.814,0.8,1.385v8.294c0,1.231-1.333,2.001-2.399,1.385L29.013,51.385c-1.066-0.616-1.066-2.155,0-2.771   l39.375-22.733C69.454,25.266,70.787,26.035,70.787,27.267z"/>
+    <path d="M69.987,63.055l-2.376-1.372c-0.013,0.043-0.023,0.09-0.032,0.136l0.409,0.236c0.495,0.286,0.8,0.814,0.8,1.385v8.294   c0,1.008-0.894,1.693-1.803,1.575l1.404,0.81c1.066,0.616,2.399-0.154,2.399-1.385V64.44C70.787,63.868,70.482,63.34,69.987,63.055   z"/>
+    <path d="M49.776,48.615l20.212-11.669c0.495-0.286,0.8-0.814,0.8-1.385v-8.294c0-1.115-1.092-1.84-2.091-1.512   c0.054,0.16,0.091,0.328,0.091,0.512v8.294c0,0.571-0.305,1.1-0.8,1.385L47.776,47.615c-0.078,0.052-0.745,0.516-0.8,1.385   c-0.057,0.911,0.609,1.467,0.673,1.518c0.639,0.443,1.277,0.885,1.916,1.328c-0.032-0.112-0.07-0.312,0.019-0.51   c0.011-0.025,0.024-0.049,0.037-0.07C48.725,50.593,48.768,49.196,49.776,48.615z"/>
+    <path d="M70.787,27.267v8.294c0,0.571-0.305,1.1-0.8,1.385L49.776,48.615   c-1.066,0.616-1.066,2.155,0,2.771l20.212,11.669c0.495,0.286,0.8,0.814,0.8,1.385v8.294c0,1.231-1.333,2.001-2.399,1.385   L29.013,51.385c-1.066-0.616-1.066-2.155,0-2.771l39.375-22.733C69.454,25.266,70.787,26.035,70.787,27.267z" />
+</g>
+</svg>
+        </button>
+        
+    </div>
+    
+    <section class="intro section">
+        <div class="back-media">
+           <!--  <video class="back-media__video" src="video/main_video.mp4" autoplay muted loop></video> -->
+        </div>       
+        <div class="intro__body">
+
+            <header class="header intro__header">
+                <div class="container container-wide">
+                    <div class="header__body">
+                        <div class="header__logo">
+                            <a href="#" class="logo">
+                                <img src="img/logo.png" alt="logo-img">
+                            </a>
+                            
+                            
+                            <div class="big-burger">
+                                <button class="burger">
+                                    <span></span>
+                                </button>
+                            </div>                            
+                        </div>
+
+                        <div class="header__navigation">
+                            <nav class="header__nav">
+                                <ul>
+                                    <li><a href="Community.html" class="link header__link">компания</a></li>
+                                    <li><a href="Interviews.html" class="link header__link">бизнес</a></li>
+                                    <li><a href="Photogallery.html" class="link header__link">медиа</a></li>
+                                    <li><a href="Opinion.html" class="link header__link">карьера</a></li>
+                                    <li><a href="Presentations.html" class="link header__link">контакты</a></li>
+                                </ul>
+                            </nav>
+
+                            <div class="header__options">
+                                <div class="option search-option">
+                                    <a href="#">
+                                        <img src="img/Lupa.png" alt="search-icon">
+                                    </a>
+                                </div>
+                                <div class="option language-option dropdown-btn">
+                                    <button href="#"  class="link header__link ">
+                                        ru &dtrif;                                   
+                                    </button>
+                                    <ul class="dropdown">
+                                        <li><a href="#">RU</a></li>
+                                        <li><a href="#">EN</a></li>
+                                </ul>
+                                </div>
+                               
+                                <div class="option text-size-option">
+                                    <button id="text-options__small" class="text-size">м</button>
+                                    <button id="text-options__normal" class="text-size text-size-active">м</button>
+                                    <button id="text-options__large" class="text-size">м</button>
+    
+                                </div>
+    
+                            </div>                           
+                        </div>
+
+                        <button class="navigation__burger burger">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="intro__content">
+                <div class="container">
+                    <div class="content__body">
+                        <div class="content__item item1">
+                            <img src="img/30let.png" alt="thirty_age">
+                            <p class="info-text">Лидер на рынке нефтесервисных услуг,  способное решать самые сложные технологические задачи в области повышения нефтеотдачи пласта</p>
+                            <p class="title">40 000</span>
+                            <p class="subtitle">Операций ГРП</span>
+                        </div>
+                        <div class="content__item item2 sizeable-text">
+
+                            <div class="info-widget">
+                                <h3 class="info-widget__title info-widget__title-light">Новости / события</h3>
+                                <div class="info-widget__content">
+                                    <a href="" class="info-widget__link">
+                                        ЗАО «СП «МеКаМинефть» внедряет первый российский технологический комплекс для разработки трудноизвлекаемых запасов.
+                                    </a>
+                                    <span class="info-widget__time">09.07.2021</span>
+                                </div>
+                                <div class="info-widget__content">
+                                    <a href="" class="info-widget__link">
+                                        ЗАО «СП «МеКаМинефть» внедряет первый российский технологический комплекс для разработки трудноизвлекаемых запасов.
+                                    </a>
+                                    <span class="info-widget__time">09.07.2021</span>
+                                </div>  
+
+                            </div>
+
+                            <div class="info-widget">
+
+                                <h3 class="info-widget__title info-widget__title-light">Видеогалерея</h3>
+                                <div class="info-widget__content">
+                                    <a href="" class="info-widget__link">
+                                        ЗАО «СП «МеКаМинефть» внедряет первый российский технологический комплекс для разработки трудноизвлекаемых запасов.
+                                    </a>
+                                    <span class="info-widget__time">09.07.2021</span>
+                                </div>
+                                <div class="info-widget__content">
+                                    <a href="" class="info-widget__link">
+                                        ЗАО «СП «МеКаМинефть» внедряет первый российский технологический комплекс для разработки трудноизвлекаемых запасов.
+                                    </a>
+                                    <span class="info-widget__time">09.07.2021</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer intro__footer">
+                <div class="container container-wide">
+                    <div class="footer__body">
+                        
+                        <button class="play-btn">
+                            <img src="img/intro_video_play.png" alt="intro_video_play">
+                        </button>
+                       
+                        <a href="tel:+73464340201" class="link tel">8(34643)40-201</a>
+
+                        <div class="footer__item-last">
+                            <ul class="soc">
+                                <li><a href="#"><img src="img/social_red.png" alt="social_red"></a></li>
+                                <li><a href="#"><img src="img/social_r.png" alt="social_r"></a></li>
+                                <li><a href="#"><img src="img/social_telegram.png" alt="social_telegram"></a></li>
+                                <li><a href="#"><img src="img/social_whatsapp.png" alt="social_whatsapp"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="arrow-down"></div>       
+        <div class="big-menu">
+            <div class="container container-wide">
+                <div class="header__logo">
+                    <a href="#" class="logo">
+                      МеКаМинефть
+                    </a>
+                    <div class="big-burger">
+                        <button class="burger burger__active">
+                            <span></span>
+                        </button>
+                    </div>                            
+                </div>
+                <div class="tab-control">
+                    <div class="tab-control__buttons">
+                        <button class="tablink hoverable tablink-active">компания</button>
+                        <button class="tablink hoverable">бизнес</button>
+                        <button class="tablink hoverable">медиа</button>
+                        <button class="tablink hoverable">карьера</button>
+                        <button class="tablink hoverable">контакты</button>
+                    </div>
+                   
+                    
+                    <div class="tab-control__content">
+                        <div class="tabcontent">
+                            <div class="tabcontent__title">
+                              компания
+                            </div>
+                            <div class="item info-widget">
+                                <h4 class="title">компания</h4>
+                                <ul>
+                                    <li><a href="" class="link drop-link drop-link-active">география присутствия</a></li>
+                                    <li><a href="" class="link drop-link">миссия, ценности</a></li>
+                                    <li><a href="" class="link drop-link">управление</a></li>
+                                    <li><a href="" class="link drop-link">история</a></li>
+                                </ul>
+                              </div>    
+                              <div class="subitem info-widget">
+                                <h4 class="title">география присутствия</h4>
+                                <ul>
+                                    <li><a href="" class="link">география присутствия</a></li>
+                                    <li><a href="" class="link">миссия, ценности</a></li>
+                                    <li><a href="" class="link">управление</a></li>
+                                    <li><a href="" class="link">история</a></li>
+                                </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                              <h4 class="title">миссия, ценности</h4>
+                              <ul>
+                                  <li><a href="" class="link">география присутствия</a></li>
+                                  <li><a href="" class="link">миссия, ценности</a></li>
+                                  <li><a href="" class="link">управление</a></li>
+                                  <li><a href="" class="link">история</a></li>
+                              </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                            <h4 class="title">история</h4>
+                            <ul>
+                                <li><a href="" class="link">география присутствия</a></li>
+                                <li><a href="" class="link">миссия, ценности</a></li>
+                                <li><a href="" class="link">управление</a></li>
+                                <li><a href="" class="link">история</a></li>
+                            </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                          <h4 class="title">управление</h4>
+                          <ul>
+                              <li><a href="" class="link">география присутствия</a></li>
+                              <li><a href="" class="link">миссия, ценности</a></li>
+                              <li><a href="" class="link">управление</a></li>
+                              <li><a href="" class="link">история</a></li>
+                          </ul>
+                            </div> 
+                                                                 
+                        </div>
+                        <div class="tabcontent">
+                          <div class="tabcontent__title">
+                              бизнес
+                            </div>
+                            <div class="item info-widget">
+                                <h4 class="title">бизнес</h4>
+                                <ul>
+                                  <li><a href="" class="link drop-link drop-link-active">география присутствия</a></li>
+                                  <li><a href="" class="link drop-link">миссия, ценности</a></li>
+                                  <li><a href="" class="link drop-link">управление</a></li>
+                                  <li><a href="" class="link drop-link">история</a></li>
+                                </ul>
+                              </div>    
+                              <div class="subitem info-widget">
+                                <h4 class="title">география присутствия</h4>
+                                <ul>
+                                    <li><a href="" class="link">география присутствия</a></li>
+                                    <li><a href="" class="link">миссия, ценности</a></li>
+                                    <li><a href="" class="link">управление</a></li>
+                                    <li><a href="" class="link">история</a></li>
+                                </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                              <h4 class="title">миссия, ценности</h4>
+                              <ul>
+                                  <li><a href="" class="link">география присутствия</a></li>
+                                  <li><a href="" class="link">миссия, ценности</a></li>
+                                  <li><a href="" class="link">управление</a></li>
+                                  <li><a href="" class="link">история</a></li>
+                              </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                            <h4 class="title">история</h4>
+                            <ul>
+                                <li><a href="" class="link">география присутствия</a></li>
+                                <li><a href="" class="link">миссия, ценности</a></li>
+                                <li><a href="" class="link">управление</a></li>
+                                <li><a href="" class="link">история</a></li>
+                            </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                          <h4 class="title">управление</h4>
+                          <ul>
+                              <li><a href="" class="link">география присутствия</a></li>
+                              <li><a href="" class="link">миссия, ценности</a></li>
+                              <li><a href="" class="link">управление</a></li>
+                              <li><a href="" class="link">история</a></li>
+                          </ul>
+                            </div>                                
+                        </div>
+
+                        <div class="tabcontent ">
+                          <div class="tabcontent__title">
+                              медиа
+                            </div>
+                            <div class="item info-widget">
+                                <h4 class="title">медиа</h4>
+                                <ul>
+                                    <li><a href="" class="link drop-link drop-link-active">география присутствия</a></li>
+                                    <li><a href="" class="link drop-link">миссия, ценности</a></li>
+                                    <li><a href="" class="link drop-link">управление</a></li>
+                                    <li><a href="" class="link drop-link">история</a></li>
+                                </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                                <h4 class="title">география присутствия</h4>
+                                <ul>
+                                    <li><a href="" class="link">география присутствия</a></li>
+                                    <li><a href="" class="link">миссия, ценности</a></li>
+                                    <li><a href="" class="link">управление</a></li>
+                                    <li><a href="" class="link">история</a></li>
+                                </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                              <h4 class="title">миссия, ценности</h4>
+                              <ul>
+                                  <li><a href="" class="link">география присутствия</a></li>
+                                  <li><a href="" class="link">миссия, ценности</a></li>
+                                  <li><a href="" class="link">управление</a></li>
+                                  <li><a href="" class="link">история</a></li>
+                              </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                            <h4 class="title">история</h4>
+                            <ul>
+                                <li><a href="" class="link">география присутствия</a></li>
+                                <li><a href="" class="link">миссия, ценности</a></li>
+                                <li><a href="" class="link">управление</a></li>
+                                <li><a href="" class="link">история</a></li>
+                            </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                          <h4 class="title">управление</h4>
+                          <ul>
+                              <li><a href="" class="link">география присутствия</a></li>
+                              <li><a href="" class="link">миссия, ценности</a></li>
+                              <li><a href="" class="link">управление</a></li>
+                              <li><a href="" class="link">история</a></li>
+                          </ul>
+                            </div>                                    
+                        </div>
+                        <div class="tabcontent">
+                            <div class="tabcontent__title">
+                              карьера
+                            </div>
+                            <div class="item info-widget">
+                                <h4 class="title">Карьера</h4>
+                                <ul>
+                                    <li><a href="" class="link drop-link drop-link-active">география присутствия</a></li>
+                                    <li><a href="" class="link drop-link">миссия, ценности</a></li>
+                                    <li><a href="" class="link drop-link">управление</a></li>
+                                    <li><a href="" class="link drop-link">история</a></li>
+                                </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                                <h4 class="title">география присутствия</h4>
+                                <ul>
+                                    <li><a href="" class="link">география присутствия</a></li>
+                                    <li><a href="" class="link">миссия, ценности</a></li>
+                                    <li><a href="" class="link">управление</a></li>
+                                    <li><a href="" class="link">история</a></li>
+                                </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                              <h4 class="title">миссия, ценности</h4>
+                              <ul>
+                                  <li><a href="" class="link">география присутствия</a></li>
+                                  <li><a href="" class="link">миссия, ценности</a></li>
+                                  <li><a href="" class="link">управление</a></li>
+                                  <li><a href="" class="link">история</a></li>
+                              </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                            <h4 class="title">история</h4>
+                            <ul>
+                                <li><a href="" class="link">география присутствия</a></li>
+                                <li><a href="" class="link">миссия, ценности</a></li>
+                                <li><a href="" class="link">управление</a></li>
+                                <li><a href="" class="link">история</a></li>
+                            </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                          <h4 class="title">управление</h4>
+                          <ul>
+                              <li><a href="" class="link">география присутствия</a></li>
+                              <li><a href="" class="link">миссия, ценности</a></li>
+                              <li><a href="" class="link">управление</a></li>
+                              <li><a href="" class="link">история</a></li>
+                          </ul>
+                            </div>                                   
+                        </div>
+                        <div class="tabcontent ">
+                            <div class="tabcontent__title">
+                              контакты
+                            </div>
+                            <div class="item info-widget">
+                                <h4 class="title">Контакты</h4>
+                                <ul>
+                                  <li><a href="" class="link drop-link drop-link-active">география присутствия</a></li>
+                                  <li><a href="" class="link drop-link">миссия, ценности</a></li>
+                                  <li><a href="" class="link drop-link">управление</a></li>
+                                  <li><a href="" class="link drop-link">история</a></li>
+                                </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                                <h4 class="title">география присутствия</h4>
+                                <ul>
+                                    <li><a href="" class="link">география присутствия</a></li>
+                                    <li><a href="" class="link">миссия, ценности</a></li>
+                                    <li><a href="" class="link">управление</a></li>
+                                    <li><a href="" class="link">история</a></li>
+                                </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                              <h4 class="title">миссия, ценности</h4>
+                              <ul>
+                                  <li><a href="" class="link">география присутствия</a></li>
+                                  <li><a href="" class="link">миссия, ценности</a></li>
+                                  <li><a href="" class="link">управление</a></li>
+                                  <li><a href="" class="link">история</a></li>
+                              </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                            <h4 class="title">история</h4>
+                            <ul>
+                                <li><a href="" class="link">география присутствия</a></li>
+                                <li><a href="" class="link">миссия, ценности</a></li>
+                                <li><a href="" class="link">управление</a></li>
+                                <li><a href="" class="link">история</a></li>
+                            </ul>
+                            </div>    
+                            <div class="subitem info-widget">
+                          <h4 class="title">управление</h4>
+                          <ul>
+                              <li><a href="" class="link">география присутствия</a></li>
+                              <li><a href="" class="link">миссия, ценности</a></li>
+                              <li><a href="" class="link">управление</a></li>
+                              <li><a href="" class="link">история</a></li>
+                          </ul>
+                            </div>                                  
+                        </div>                          
+                    </div>                
+                </div>
+                <div class="big-menu__footer">
+                    <div class="item contacts">
+                        <ul>
+                            <li><a href="">ЗАО СП МиКаМиНефть</a></li>
+                            <li><a href="">Юридический и почтовый адрес: 628684, г.Мегион, ул. западная 31</a></li>
+                            <li><a href="">Тел: 8 800 555 35 35</a></li>
+                            <li><a href="">Факс: 8 800 555 35 3</a></li>
+                            <li><a href="">Маил: mecamineft@mecamineft.com</a></li>
+                        </ul>
+
+                        <ul class="soc">
+                            <li><a href="#"><img src="img/social_red.png" alt="social_red"></a></li>
+                            <li><a href="#"><img src="img/social_r.png" alt="social_r"></a></li>
+                            <li><a href="#"><img src="img/social_telegram.png" alt="social_telegram"></a></li>
+                            <li><a href="#"><img src="img/social_whatsapp.png" alt="social_whatsapp"></a></li>
+                        </ul>
+                    </div>
+                    <div class="item form">
+                        <form>
+                            <label for="form-email">Оставайтесь в курсе событий компании МеКаМинефть</label><br>
+                            <input type="text" id="form-email" name="form-email" placeholder="Ваш email"
+                            class="txt"><br>
+                            <input type="submit" value="Подписаться" class="form-btn">
+                        </form>
+                        <div class="partners">
+                            <p>сайты партнеров:</p>
+                            <ul class="soc">
+                                <li><a href="#"><img src="img/social_red.png" alt="social_red"></a></li>
+                                <li><a href="#"><img src="img/social_r.png" alt="social_r"></a></li>
+                                <li><a href="#"><img src="img/social_telegram.png" alt="social_telegram"></a></li>
+                                <li><a href="#"><img src="img/social_whatsapp.png" alt="social_whatsapp"></a></li>
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+                    <div class="item politic">
+                        <ul>
+                            <li><a href="#">Ограничение ответственности</a></li>
+                            <li><a href="#">Ограничение ответственности</a></li>
+                            <li><a href="#">Ограничение ответственности</a></li>
+                            <li><a href="#">Ограничение ответственности</a></li>
+                        </ul>
+                        <p class="info">ЗАО СПК МеКаМинефть</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="achievements section">
+        <div class="container">
+            <div class="achievements__row">
+                <div class="achievements__item item1">
+                    <p class="achievements__main-text title">
+                        МЫ ДОСТИГЛИ ВЫСОКИХ ПОКАЗАТЕЛЕЙ УЧАСТВУЯ
+                        В ОТРАСЛЕВОЙ ПРОГРАММЕ ИМПОРТОЗАМЕЩЕНИЯ. 
+                    </p>
+                    <p class="achievements__main-text">
+                        С 2016 года средоточены на разработке и внедрении на территории Югры комплекса заканчивания горизонтальных скважин и налаживании 
+    собственного производства оборудования для отечественного флота ГРП.
+                    </p>
+                </div>
+                <div class="achievements__item item2">
+                    <p class="achievements__secondary-text">
+                        Технологическая надёжность предлагаемого 
+    импортозамещающего оборудования позволяет 
+    нефтяным компаниям всей страны приступать 
+    к промышленной добыче запасов.
+                    </p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="company section black-section">
+        <div class="container">
+            <h2 class="section__title">
+                компания
+            </h2>
+
+            <div class="section__content">
+                <div class="section__main">
+
+                    <div class="info-widget company__geography">
+                        <h3 class="info-widget__title">География деятельности</h3>
+
+                        <div class="info-widget__content company__map">
+                            <div class="tab-control">
+                                <div class="tab-control__buttons">
+                                    <button class="tablink tablink-active">ПУ Урай</button>
+                                    <button class="tablink">ПУ Пермь</button>
+                                    <button class="tablink">ПУ Томск</button>
+                                    <button class="tablink">ПУ Назым</button>
+                                    <button class="tablink">ПУ Арктикгаз</button>
+                                    <button class="tablink">ПУ Новый Порт</button>
+                                </div>
+                               
+                                
+                                <div class="tab-control__content">
+                                    <div class="tabcontent">
+                                        <img src="img/map.png" alt=" map">                                       
+                                      </div>
+                                      <div class="tabcontent">
+                                        <p> Содержимое 2...</p>
+                                      </div>
+                                      <div class="tabcontent">
+                                        <p> Содержимое 3...</p>
+                                      </div><div class="tabcontent">
+                                        <p> Содержимое 4...</p>
+                                       
+                                      </div>
+                                      <div class="tabcontent">
+                                        <p> Содержимое 5...</p>
+                                      </div>
+                                      <div class="tabcontent">
+                                        <p> Содержимое 6...</p>
+                                      </div><div class="tabcontent">
+                                        <p> Содержимое 7...</p>
+                                       
+                                      </div>
+                                      <div class="tabcontent">
+                                        <p> Содержимое 8...</p>
+                                      </div>
+                                      <div class="tabcontent">
+                                        <p> Содержимое 9...</p>
+                                      </div>
+                                </div>
+
+                                <div class="tab-control__buttons">
+                                    <button class="tablink">ПУ Мегион</button>
+                                    <button class="tablink">ПУ Покачи/Лангепас</button>
+                                    <button class="tablink">ПУ Пыть-Ях</button>
+                                    <button class="tablink">ПУ Самотлор</button>
+                                    <button class="tablink">ПУ Ханты-Мансийск</button>
+                                </div>
+                            
+                            </div>
+
+                        </div>  
+                    </div>
+
+                    
+                </div>
+
+                <div class="section__aside">
+                    <div class="info-widget">
+                        <h3 class="info-widget__title">Миссия / ценности</h3>
+
+                        <div class="info-widget__content">
+                            <a href="" class="info-widget__link link__underline">
+                               <img src="img/mission.jpg" alt="mission-block-img">                               
+                               <span class="overlay"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-widget">
+                        <h3 class="info-widget__title">Управление</h3>
+
+                        <div class="info-widget__content">
+                            <a href="" class="info-widget__link link__underline">
+                               <img src="img/upravlenie.jpg" alt="upravlenie-block-img">
+                               <span class="overlay"></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                   
+
+                    <div class="flex-row">
+                        <a href="#" class="btn history-btn">ИСТОРИЯ "МеКаМинефть"</a>
+                        <a href="" class="btn more-btn">Подробнее</a>
+                        <a href="" class="btn photo-btn">Фото</a>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow-down"></div>
+    </section>
+
+    <section class="business section black-section">
+        <div class="container">
+            <h2 class="section__title">
+                бизнес
+            </h2>
+
+            <div class="section__content">
+                <div class="section__main">
+                    <div class="business__main-widgets">
+                        <div class="info-widget">
+                            <h3 class="info-widget__title">Бизнес модель МеКаМинефть</h3>
+    
+                            <div class="info-widget__content business-model">
+                                <img src="img/business_model.png" alt="business img">
+                            </div>  
+                        </div>
+                        <div class="info-widget  business-power">
+                            <h3 class="info-widget__title">Производственные мощности</h3>
+    
+                            <div class="info-widget__content flex-row">
+                                <div class="business-power__item">
+                                    <h3 class="business-power__title text-center">2100</h3>
+                                    <p class="business-power__descr text-center">человек – трудоустроено 
+                                        в ЗАО «СП «МеКаМинефть»</p>
+                                </div>
+                                <div class="business-power__item">
+                                    <h3 class="business-power__title text-center">23</h3>
+                                    <p class="business-power__descr text-center">комплекса ГРП с широким 
+                                        спектром применения</p>
+                                </div>
+                                <div class="business-power__item">
+                                    <h3 class="business-power__title text-center">752</h3>
+                                    <p class="business-power__descr text-center">транспортной техники
+                                        на балансе компании</p>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                   
+
+                    <div class="flex-row business__buttons-left">
+                        <a href="" class="btn more-btn">Подробнее</a>
+                        <a href="" class="btn photo-btn">Фото</a>
+                        <a href="" class="btn photo-btn">отзывы</a>
+                    </div>
+                </div>
+                <div class="section__aside">
+                    <div class="info-widget business-technologies">
+                        <h3 class="info-widget__title">Услуги, технологии МеКаМинефть</h3>
+                        
+                        <div class="tech-carousel">     
+                            <div class="tech-outer">
+                                <div class="item active info-widget__content text-center">
+                                    <img src="img/technology_model.png" alt="technology model img">
+                                    <p class="text-center">ВЫСОКОРАСХОДНЫЙ МГРП <br>
+                                        (расход до 18 куб.м) <br>
+                                        НА ОБЪЕКТАХ С ТРИЗ  <br>
+                                        (Бажен, Доманик) <br> </p>
+                                </div>
+                                <div class=" item info-widget__content text-center">
+                                    <img src="img/technology_model.png" alt="technology model img">
+                                    <p class="text-center">КИСЛОТНЫЙ ГРП</p>
+                                </div> 
+                                <div class="item info-widget__content text-center">
+                                    <img src="img/technology_model.png" alt="technology model img">
+                                    <p class="text-center">ВЫСОКОРАСХОДНЫЙ МГРП <br>
+                                        (расход до 18 куб.м) <br>
+                                        НА ОБЪЕКТАХ С ТРИЗ  <br>
+                                        (Бажен, Доманик) <br> </p>
+                                </div>
+                                <div class="item info-widget__content text-center">
+                                    <img src="img/technology_model.png" alt="technology model img">
+                                    <p class="text-center">КИСЛОТНЫЙ ГРП</p>
+                                </div>
+                            </div>                       
+                            
+                        </div>
+                       
+                    </div>
+
+                    <div class="flex-row business__buttons-right">
+                        <button class="btn arrow-up-btn tech-prev">
+                            <div class="arrow"></div>
+                        </button>
+                        <button class="btn arrow-down-btn tech-next">
+                            <div class="arrow"></div>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="multimedia section black-section">
+        <div class="container">
+            <h2 class="section__title">
+                мультимедиа
+            </h2>
+
+            <div class="section__content">
+                <div class="section__main">
+                    <div class="info-widget news">
+                        <h3 class="info-widget__title">Новости</h3>
+                        <div class="info-widget__content media">                            
+                            <div class="media__back">
+                                <img src="img/news_back.jpg" alt="news_back" class="">
+                                <div class="media__play-button">
+                                    <svg id="play"  viewBox="0 0 163 163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"="0px">
+    
+                                        <g fill="none">
+                                            <g  transform="translate(2.000000, 2.000000)" stroke-width="4">
+                                                <path d="M10,80 C10,118.107648 40.8923523,149 79,149 L79,149 C117.107648,149 148,118.107648 148,80 C148,41.8923523 117.107648,11 79,11" id="lineOne"></path>
+                                                <path d="M105.9,74.4158594 L67.2,44.2158594 C63.5,41.3158594 58,43.9158594 58,48.7158594 L58,109.015859 C58,113.715859 63.4,116.415859 67.2,113.515859 L105.9,83.3158594 C108.8,81.1158594 108.8,76.6158594 105.9,74.4158594 L105.9,74.4158594 Z" id="triangle"></path>
+                                                <path d="M159,79.5 C159,35.5933624 123.406638,0 79.5,0 C35.5933624,0 0,35.5933624 0,79.5 C0,123.406638 35.5933624,159 79.5,159 L79.5,159" id="lineTwo"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div> 
+                            </div>
+                            <span class="media__date">
+                                    15 Мая 2022
+                            </span>
+                            <div class="media__descr">
+                                
+                                <h3 class="media__title">Заголовок</h3>
+                                <p class="media__subtitle">
+                                    Здесь описание мультимедия контента
+                                </p>
+                                <a href="" class="btn gold media__button">
+                                    Сообщество меками
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-row flex-sb">
+                        <div class="flex-col50">
+                            <div class="info-widget">
+                                <h3 class="info-widget__title">
+                                    Презентация
+                                </h3>
+
+                                <div class="info-widget__content media">
+                                    <div class="media__back">
+                                        <img src="img/main-back.jpg" alt="main-back" class="">
+                                    </div>
+                                    <span class="media__date">
+                                            15 Мая 2022
+                                    </span>
+                                    <div class="media__descr">
+                                        
+                                        <h3 class="media__title">Заголовок</h3>
+                                        <p class="media__subtitle">
+                                            Здесь описание мультимедия контента
+                                        </p>
+                                        <a href="" class="btn gold media__button">
+                                            Сообщество меками
+                                        </a>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-col50">
+                            <div class="info-widget">
+                                <h3 class="info-widget__title">
+                                    Интервью
+                                </h3>
+
+                                <div class="info-widget__content media">
+                                    <div class="media__back">
+                                        <img src="img/news_interview.jpg" alt="news_interview">
+                                    </div>
+                                    <span class="media__date">
+                                            15 Мая 2022
+                                    </span>
+                                    <div class="media__descr">
+                                        
+                                        <h3 class="media__title">Заголовок</h3>
+                                        <p class="media__subtitle">
+                                            Здесь описание мультимедия контента
+                                        </p>
+                                        <a href="" class="btn gold media__button">
+                                            Сообщество меками
+                                        </a>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__aside">
+                    <div class="info-widget events">
+                        <h3 class="info-widget__title">События</h3>
+                        <div class="info-widget__content media">
+                            <div class="media__back">
+                                <img src="img/events_back.jpg" alt="" class="media-back">
+                            </div>
+                            <span class="media__date">
+                                    15 Мая 2022
+                            </span>
+                            <div class="media__descr">
+                                
+                                <h3 class="media__title">Заголовок</h3>
+                                <p class="media__subtitle">
+                                    Здесь описание мультимедия контента
+                                </p>
+                                <a href="" class="btn gold media__button">
+                                    Сообщество меками
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-widget">
+                        <h3 class="info-widget__title">Видеосюжет</h3>
+                        <div class="info-widget__content media">
+                            <div class="media__back">
+                                <img src="img/news_video.jpg" alt="news_video-img">
+                                <div class="media__play-button">
+                                    <svg id="play"  viewBox="0 0 163 163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"="0px">
+    
+                                        <g fill="none">
+                                            <g  transform="translate(2.000000, 2.000000)" stroke-width="4">
+                                                <path d="M10,80 C10,118.107648 40.8923523,149 79,149 L79,149 C117.107648,149 148,118.107648 148,80 C148,41.8923523 117.107648,11 79,11" id="lineOne"></path>
+                                                <path d="M105.9,74.4158594 L67.2,44.2158594 C63.5,41.3158594 58,43.9158594 58,48.7158594 L58,109.015859 C58,113.715859 63.4,116.415859 67.2,113.515859 L105.9,83.3158594 C108.8,81.1158594 108.8,76.6158594 105.9,74.4158594 L105.9,74.4158594 Z" id="triangle"></path>
+                                                <path d="M159,79.5 C159,35.5933624 123.406638,0 79.5,0 C35.5933624,0 0,35.5933624 0,79.5 C0,123.406638 35.5933624,159 79.5,159 L79.5,159" id="lineTwo"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                               
+                            </div>
+                            <span class="media__date">
+                                    15 Мая 2022
+                            </span>
+                            <div class="media__descr">
+                                
+                                <h3 class="media__title">Заголовок</h3>
+                                <p class="media__subtitle">
+                                    Здесь описание мультимедия контента
+                                </p>
+                                <a href="" class="btn gold media__button">
+                                    Сообщество меками
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-row flex-right">
+                        <a href="" class="btn">
+                            все события
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="footer multimedia__footer">
+            <div class="container container-wide">
+                <div class="footer__body">
+                    
+                    <button class="play-btn">
+                        <img src="img/intro_video_play.png" alt="intro_video_play">
+                    </button>
+                   
+                    <a href="tel:+73464340201" class="link tel">8(34643)40-201</a>
+
+                    <div class="footer__item-last">
+                        <ul class="soc">
+                            <li><a href="#"><img src="img/social_red.png" alt="social_red"></a></li>
+                            <li><a href="#"><img src="img/social_r.png" alt="social_r"></a></li>
+                            <li><a href="#"><img src="img/social_telegram.png" alt="social_telegram"></a></li>
+                            <li><a href="#"><img src="img/social_whatsapp.png" alt="social_whatsapp"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/jquery.min.js"></script>   
+    <script src="js/simpleLightbox.min.js"></script>    
+    <script src="js/scrollbar.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

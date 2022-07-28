@@ -1,0 +1,610 @@
+@media(max-width: 1500px)
+{
+    .container
+    {
+        padding-right: 60px; // для скроллбара
+    }
+
+    .scrollbar{
+        right: 20px;
+    }    
+    
+    .business-power
+    {
+        &__content
+        {
+            justify-content: center;
+        }
+    }
+   
+
+    .footer
+    {
+        .play-btn
+        {
+            margin-right: 25px;
+        }
+    }
+}
+
+
+@media(max-width: 1200px)
+{
+    .container
+    {
+        max-width: 1024px;
+        padding-right: 60px; // для скроллбара
+    }
+
+    .scrollbar{
+        right: 20px;
+    }
+
+
+
+    .achievements
+    {
+        .item1{
+            padding-right: 50px;
+        }
+
+        .item2
+        {
+            padding-left: 50px;;
+        }
+    }
+
+    .info-widget{
+        &__title
+        {
+            font-size: 16px;
+        }
+    }
+
+    .business-power{
+        .flex-row
+        {
+            justify-content: center;
+        }
+    }
+
+    .media__play-button{
+        height: 60px;
+        width: 60px;;
+    }
+
+    .media,
+    .media__back,
+    .media__back img,
+    .media__back video
+    {
+        min-height: 230px;
+    }
+
+    .media__play-button
+    {
+        height: 40px;
+        width: 40px;
+        right: 25px;
+        left: auto;
+        top: 25px;
+        transform: none;
+    }
+
+}
+
+@media(max-width: 1024px)
+{
+    .container
+    {
+        max-width: 992px;
+        padding-right: 15px;
+    }
+
+    .section
+    {
+        padding-bottom: 20px;
+    }
+
+    .arrow-down,
+    .scrollbar{
+        display: none;
+    }
+
+
+    .achievements
+    {
+        .item1{
+            padding-right: 50px;
+        }
+
+        .item2
+        {
+            padding-left: 50px;;
+        }
+
+        &__main-text{
+            font-size: 20px;
+        }
+    
+        &__secondary-text{
+            font-size: 18px;
+            font-weight: 100;
+        }
+    }
+}
+
+@media(max-width: 992px)
+{
+    .container
+    {
+        max-width: 768px;
+    }
+
+    .big-menu{
+
+    }
+
+    .section{
+        min-height: 100px;
+    }
+    .section__aside,
+    .section__main
+        {
+            flex:  0 0 100%;
+            max-width: 100%;
+        }
+
+    .section__main{
+            margin-bottom: 30px;
+        }
+
+    .section__aside
+        {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .info-widget{
+                flex: 0 0 48%;
+            }
+        }
+
+    .tab-control
+    {
+
+        &__buttons
+        {
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
+    }
+
+    .intro{
+
+        &__body
+        {
+            min-height: 100px;
+        }
+        &__content
+        {
+            justify-content: center;
+
+            .content__item{
+            
+                max-width: 360px;
+            }
+
+            .content__body{
+                justify-content: center;
+            }
+
+            .item1
+            {
+                .title
+                {
+                    font-size: 95px;
+                }
+                .info-text{
+                    font-size: 20px;
+                    margin: 25px 0;
+                }
+            }
+        }
+    }
+
+    .company
+    {
+        .history-btn
+        {
+            width: auto;
+            margin: 10px 10px  0 0;
+        }
+
+        .info-widget{
+            height: auto;
+        }
+
+        .btn{
+            margin-right: 10px;;
+        }
+    }
+
+    .business
+    {
+        &-model
+        {
+            height: 240px;
+            justify-content: center;
+        }
+
+        .section__aside
+        {
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        &-technologies
+        {
+            overflow: initial;
+            height: initial;
+            .tech-outer
+            {
+                flex-direction: row;
+            }
+            p{
+              font-size: 16px;
+            }
+            .info-widget__content
+            {
+                min-width: 250px;
+            }
+        }
+
+        &__buttons-right
+        {
+            padding-right: 30px;
+        }
+
+        .tech-outer{
+            .item{
+                margin-right: 20px;
+            }
+        }
+
+    }
+
+
+    
+
+    .business-power{
+        &__title
+        {
+            font-size: 70px;
+        }
+
+        &__item
+        {
+            max-width: 230px;
+        }
+    }
+
+    section.multimedia
+    {
+        padding-bottom: 150px;
+        .info-widget
+        {
+            padding-right: 0;
+            flex: 0 0 49%;
+        }
+    }
+
+
+}
+
+@media(max-width: 900px)
+{
+  .big-menu__footer {
+    margin: 40px 0;
+    max-width: 60%;
+    padding-bottom: 60px;
+  }
+  .big-menu .container {
+    flex-direction: column;
+  }
+  .big-menu .tab-control {
+    flex-direction: column;
+    overflow: initial;
+    padding-top: 165px;
+  }
+  .big-menu .tab-control__content {
+    padding-top: 0;
+    margin-left: 0;
+  }
+  .big-menu .tab-control__buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .big-menu .tab-control .tabcontent {
+    width: 100%;
+  }
+  .big-menu .tab-control .tablink {
+    font-size: 20px;
+    margin-bottom: 0;
+    flex: 1;
+  }
+
+}
+
+@media(max-width: 768px)
+{
+    .container
+    {
+        max-width: 576px;
+    }
+
+    .intro{
+        &__content
+        {
+            .content__item{
+            
+                max-width: 100%;
+            }
+
+            .item1{
+                text-align: center;
+            }
+        }
+    }
+
+    .achievements
+    {
+
+        &__row
+        {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__item
+        {
+            margin-bottom: 40px;
+        }
+
+        .item1{
+            padding-right: 0px;
+            border: none;
+        }
+
+        .item2
+        {
+            padding-left: 0px;;
+            margin-top: 0;
+        }
+
+        &__main-text{
+            font-size: 20px;
+        }
+    
+        &__secondary-text{
+            font-size: 18px;
+            font-weight: 100;
+        }
+    }
+
+    .section
+    {
+        &__main,
+        &__aside
+        {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .tel
+    {
+        font-size: 20px;
+    }
+
+    ul{
+        li{
+            margin-right: 25px;
+        }
+    }
+
+    
+
+    .media-descr
+    {
+        font-size: 16px;
+    }
+
+
+
+    .company{
+        &__map
+        {
+            min-height: 0;
+        }
+    }
+
+    .business{
+        &-technologies
+        {
+            p{
+                font-size: 18px;
+            }
+
+        }
+    }
+
+
+    
+    
+    .tab-control .tablink {
+        text-align: center;
+      }
+   
+}
+
+@media(max-width: 576px)
+{
+    .container
+    {
+        max-width: 100%;
+    }
+
+    .multimedia .flex-col50,
+    .flex-col50
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .tel{
+        font-size: 16px;
+    }
+
+    ul{
+        li{
+            margin-right: 15px;
+        }
+    }
+
+    .form
+    {
+        .txt{
+            width: 100%;
+        }
+    }
+
+    .intro{
+        &__content
+        {
+            .item1{
+                img{
+                    max-height: 150px;
+                }
+
+                .info-text
+                {
+                    font-size: 18px;
+                }
+
+                .title{
+                    font-size: 75px;
+                }
+
+                .subtitle{
+                    font-size: 26px;
+                }
+            }
+
+
+        }
+    }
+
+    .company{
+        .btn
+        {
+            margin-right: 10px;
+        }
+
+       
+    }
+
+    .section__aside{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .section__aside{
+        .info-widget{
+            flex: 1;
+        }
+    }
+
+    .business__buttons-left
+    {
+        flex-wrap: wrap !important;
+        .btn
+        {
+            margin: 10px 0px 0 0;
+            width: 100%;
+        }
+    }
+
+    .business{
+        &-technologies
+        {
+            p{
+                font-size: 16px;
+            }
+
+        }
+    }
+
+
+
+    .media,
+    .media__back,
+    .media__back img,
+    .media__back video
+    {
+        height: 230px;
+        min-width: 275px;
+    }
+
+    section.multimedia{
+        .flex-col50
+        {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .footer{
+        bottom:45px;
+        
+    }
+}
+
+
+@media(max-width: 450px)
+{
+    .company{
+        .history-btn{
+            width: 100%;
+        }
+    }
+
+    .media,
+    .media__back,
+    .media__back img,
+    .media__back video
+    {
+        height: 230px;
+        min-width: 100%;
+    }
+
+    .section__title
+    {
+        font-size: 1.5rem;
+    }
+
+    .achievements
+    {
+        &__main-text
+        {
+            font-size: 1rem;
+        }
+
+        &__secondary-text
+        {
+            font-size: 0.8rem;
+        }
+    }
+}
