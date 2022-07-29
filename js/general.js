@@ -20,7 +20,6 @@ $(document).ready(function()
    
                 $(this).addClass('tablink-active');
                 $(tabcontent[i]).toggleClass('show')
-                console.log(tabcontent[i])
                 indexActiveTab = i;
             });
             if($(this).hasClass('hoverable')){
@@ -34,7 +33,6 @@ $(document).ready(function()
     
                     $(this).addClass('tablink-active');
                     $(tabcontent[i]).toggleClass('show')
-                    console.log(tabcontent[i])
                     indexActiveTab = i;
                 });
             }            
@@ -96,10 +94,13 @@ $(document).ready(function()
     })
 
     /* Работа с размером текста */
+    let sizeStep = 4;
+    let size = $('body').css('font-size');
+    let sizeInt = parseInt(size);
    $('#text-options__small').click(function(){
     if($(this).hasClass('text-size-active'))
         return;
-        $('.sizeable-text').css('font-size', '14px');
+        $('body').css('font-size', sizeInt - sizeStep);
 
         $('#text-options__small').addClass('text-size-active');
         $('#text-options__normal').removeClass('text-size-active');
@@ -108,7 +109,7 @@ $(document).ready(function()
    $('#text-options__normal').click(function(){
     if($(this).hasClass('text-size-active'))
         return;
-        $('.sizeable-text').css('font-size', '18px');
+        $('body').css('font-size', sizeInt);
 
         
         $('#text-options__normal').addClass('text-size-active');
@@ -119,7 +120,7 @@ $(document).ready(function()
     if($(this).hasClass('text-size-active'))
         return;
 
-    $('.sizeable-text').css('font-size', '22px');
+    $('body').css('font-size', sizeInt + sizeStep);
 
     
     $('#text-options__large').addClass('text-size-active');

@@ -103,6 +103,7 @@ html {
 
 body {
   font-family: "Calibri";
+  font-size: 18px;
   color: #fff;
 }
 
@@ -148,10 +149,6 @@ ul li:last-child {
 
 .flex-sb {
   justify-content: space-between;
-}
-
-.sizeable-text {
-  font-size: 18px;
 }
 
 .text-small {
@@ -743,7 +740,6 @@ ul li:last-child {
   bottom: 25px;
   z-index: 5;
   margin-right: 10px;
-  font-size: 18px;
 }
 .media__button {
   border-color: #d6b07d;
@@ -881,22 +877,25 @@ ul li:last-child {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   z-index: 10;
 }
 .header__logo .logo {
   font-size: 34px;
 }
 .header__navigation {
-  flex: 0 0 70%;
+  flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   transition: all 0.2s ease-in-out;
 }
 .header__navigation.active {
   right: 0;
 }
 .header__nav {
-  padding-top: 5px;
+  padding: 5px 20px;
+  margin: 0 auto;
 }
 .header__nav ul {
   display: flex;
@@ -919,6 +918,7 @@ ul li:last-child {
 }
 .header__options {
   font-weight: bold;
+  padding-right: 10px;
 }
 .header__options .option {
   display: inline-block;
@@ -1310,8 +1310,8 @@ ul li:last-child {
   .big-menu .tab-control__content {
     width: 70%;
   }
-  .header__navigation {
-    flex: 0 0 75%;
+  .header__nav {
+    margin: 0;
   }
   .header__nav li:not(:last-child) {
     margin-right: 60px;
@@ -1807,6 +1807,9 @@ h1 {
   .community-intro .subtitle {
     font-size: 80px;
   }
+  .footer .item-last {
+    margin-left: 0;
+  }
 }
 @media (max-width: 1200px) {
   .community-intro .img-employees {
@@ -1816,9 +1819,12 @@ h1 {
     font-size: 60px;
   }
 }
-@media (max-width: 1024) {
+@media (max-width: 1024px) {
   .community-intro__inner {
     margin-top: -80px;
+  }
+  .community-intro__footer {
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -1922,6 +1928,14 @@ h1 {
   .community-intro__form .submit {
     background: white;
     color: #dd2a1b;
+    font-size: 24px;
+    padding: 10px;
+  }
+  .community-intro__intro .subtitle {
+    font-size: 36px;
+  }
+  .community-intro__intro .search-title {
+    font-size: 30px;
   }
   .community-intro__footer {
     bottom: 15px;
@@ -1933,6 +1947,9 @@ h1 {
   .business-power__inner {
     margin: 20px 0;
   }
+  .business-power__title {
+    font-size: 60px;
+  }
   .business-power .btn {
     padding: 12px 24px;
     font-size: 16px;
@@ -1940,8 +1957,29 @@ h1 {
   section.info .info__text {
     font-size: 24px;
   }
+  .stories__card .tags-block .btn {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
   h3.title {
     font-size: 40px;
     margin-top: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .community-intro .subtitle {
+    font-size: 30px;
+  }
+  .community-intro .search-title {
+    font-size: 22px;
+  }
+  .community-intro__form .submit {
+    font-size: 24px;
+  }
+  section.info .info__text {
+    font-size: 18px;
+  }
+  h3.title {
+    font-size: 30px;
   }
 }

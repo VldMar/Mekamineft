@@ -4,6 +4,10 @@
             font-size: 80px;
         }
     }
+
+    .footer .item-last{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 1200px){
@@ -15,24 +19,26 @@
         .subtitle{
             font-size: 60px;
         }
+
     }
 }
 
 
-@media (max-width: 1024){
-    .community-intro{
-        &__inner{
-            margin-top: -80px;
-        }
+@media (max-width: 1024px){
+    .community-intro__inner
+    {
+        margin-top: -80px;
     }
 
+    .community-intro__footer{
+        display: none;
+    }
 }
 
 
 @media (max-width: 992px){
     .community-intro
     {
-        
         min-height: 0;
         &__header{
             color: black;
@@ -162,7 +168,6 @@
         &__inner{
             margin-top: 0px;
             padding-bottom: 30px;
-
         }
         &__form{
             .inputs{
@@ -176,6 +181,19 @@
             .submit{
                 background: white;
                 color: #dd2a1b;
+                font-size: 24px;
+                padding: 10px;
+
+            }
+        }
+
+        &__intro{
+            .subtitle{
+                font-size: 36px;
+            }
+
+            .search-title{
+                font-size: 30px;
             }
         }
 
@@ -194,6 +212,10 @@
             margin: 20px 0;
         }
 
+        &__title{
+            font-size: 60px;
+        }
+
         .btn{
             padding: 12px 24px;
             font-size: 16px;
@@ -207,9 +229,41 @@
         }
     }
 
+    .stories__card .tags-block .btn{
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
     
     h3.title{
         font-size: 40px;
         margin-top: 50px;
     }
+
+    
+}
+
+
+
+@media (max-width: 400px)
+{
+  .community-intro .subtitle{
+    font-size: 30px;
+  }
+  
+  .community-intro .search-title{
+    font-size: 22px;
+  }
+  
+  .community-intro__form .submit{
+    font-size: 24px;
+  }
+  
+  section.info .info__text{
+    font-size: 18px;
+  }
+  
+  h3.title{
+    font-size: 30px;
+  }
 }

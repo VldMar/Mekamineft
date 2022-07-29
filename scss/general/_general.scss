@@ -10,6 +10,7 @@ html
 body
 {
     font-family: 'Calibri';
+    font-size: 18px;
 	color: #fff;
 }
 
@@ -64,10 +65,6 @@ ul{
 .flex-sb
 {
 	justify-content: space-between;
-}
-.sizeable-text
-{
-    font-size: 18px;
 }
 
 .text-small
@@ -791,7 +788,6 @@ ul{
             bottom: 25px;
             z-index: 5;
             margin-right: 10px;
-            font-size: 18px;
         }
 
         &__button

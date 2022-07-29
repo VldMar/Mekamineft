@@ -15,8 +15,7 @@ $gold: #d6b07d;
     flex-basis: 100% !important;
     display: flex;
     height: 230px;
-    border: 1px solid gray;
-    margin-bottom: 4px !important;
+   box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
 
     .media__back{
         flex-basis: 25%;
@@ -377,17 +376,12 @@ $gold: #d6b07d;
     .opinion{
         &__name
         {
-            font-size: 24px;
             margin-top: 12px;
-        }
-        &__text{
-            font-size: 16px;
         }
     }
 
     .interview{
         height: 350px;
-
     }
 }
 
@@ -412,22 +406,9 @@ $gold: #d6b07d;
         flex-wrap: nowrap;
         overflow-x: scroll;
 
-        &::after
-        {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-
-            
-            width: 0;
-            height: 0;
-            
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
-            border-left: 10px solid #dd2a1b;
+        
+        .tag{
+            min-width: 230px;
         }
     }
     

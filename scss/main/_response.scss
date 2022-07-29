@@ -101,6 +101,10 @@
         padding-right: 15px;
     }
 
+    .btn{
+        padding: 10px 30px;
+    }
+
     .section
     {
         padding-bottom: 20px;
@@ -302,41 +306,6 @@
 
 }
 
-@media(max-width: 900px)
-{
-  .big-menu__footer {
-    margin: 40px 0;
-    max-width: 60%;
-    padding-bottom: 60px;
-  }
-  .big-menu .container {
-    flex-direction: column;
-  }
-  .big-menu .tab-control {
-    flex-direction: column;
-    overflow: initial;
-    padding-top: 165px;
-  }
-  .big-menu .tab-control__content {
-    padding-top: 0;
-    margin-left: 0;
-  }
-  .big-menu .tab-control__buttons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  .big-menu .tab-control .tabcontent {
-    width: 100%;
-  }
-  .big-menu .tab-control .tablink {
-    font-size: 20px;
-    margin-bottom: 0;
-    flex: 1;
-  }
-
-}
 
 @media(max-width: 768px)
 {

@@ -17,6 +17,7 @@ $gold: #d6b07d;
         position: relative;
         display: flex;
         flex-direction: column;
+        align-self: flex-start;
         z-index: 10;
 
         .logo{
@@ -28,9 +29,10 @@ $gold: #d6b07d;
 
     &__navigation
     {
-        flex: 0 0 70%;
+        flex: 1;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        flex-wrap: wrap;
         transition: all 0.2s ease-in-out;
     }
 
@@ -40,7 +42,8 @@ $gold: #d6b07d;
 
     &__nav{
         
-        padding-top: 5px;
+        padding: 5px 20px;
+        margin: 0 auto;      
         ul{
             display: flex;
             justify-content: center;
@@ -69,6 +72,7 @@ $gold: #d6b07d;
     &__options{
         
         font-weight: bold;
+        padding-right: 10px;
         
         .option{
             display: inline-block;
@@ -605,13 +609,9 @@ $gold: #d6b07d;
 
     .header
     {
-        &__navigation
-        {
-            flex: 0 0 75%;
-        }
-
         &__nav
         {
+            margin: 0;
            
             li:not(:last-child){
                 margin-right: 60px;
@@ -626,6 +626,7 @@ $gold: #d6b07d;
     }
 
 }
+
 
 @media (max-width: 1200px){
     
