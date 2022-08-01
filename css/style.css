@@ -703,12 +703,23 @@ ul li:last-child {
   color: #fff;
 }
 
-.link__underline .overlay::after {
-  display: block;
+.link__underline {
+  position: relative;
+}
+.link__underline::after {
   content: "";
-  border-bottom: 10px solid #dd2a1b;
-  transform: scaleX(0);
-  transition: transform 0.2s ease-in-out;
+  position: absolute;
+  height: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: #dd2a1b;
+  width: 0;
+  transition: 0.3s;
+  z-index: 10;
+}
+.link__underline:hover::after {
+  width: 100%;
 }
 .link__underline:hover .overlay::after {
   transform: scaleX(1);
@@ -790,6 +801,12 @@ ul li:last-child {
   background-color: transparent;
   cursor: pointer;
   z-index: 15;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+.media__play-button:hover {
+  background-color: white;
 }
 .media__play-button svg#play {
   width: 100%;
@@ -914,6 +931,7 @@ ul li:last-child {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex-wrap: wrap;
   transition: all 0.2s ease-in-out;
 }
@@ -950,6 +968,9 @@ ul li:last-child {
 .header__options .option {
   display: inline-block;
   margin-right: 20px;
+}
+.header__options .search-option img {
+  vertical-align: bottom;
 }
 .header__options .dropdown-btn {
   position: relative;
@@ -992,13 +1013,13 @@ ul li:last-child {
 .header__options .text-size-option .text-size-active {
   color: red;
 }
-.header__options #text-options__small {
+.header__options .text-options__small {
   font-size: 18px;
 }
-.header__options #text-options__normal {
+.header__options .text-options__normal {
   font-size: 20px;
 }
-.header__options #text-options__large {
+.header__options .text-options__large {
   font-size: 22px;
 }
 
@@ -1017,10 +1038,10 @@ ul li:last-child {
 .crumbs__item {
   text-transform: uppercase;
   color: #dd2a1b;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: bold;
-  padding-right: 30px;
-  margin-right: 20px;
+  padding-right: 20px;
+  margin-right: 10px;
   position: relative;
 }
 .crumbs__item::after {
@@ -1038,6 +1059,8 @@ ul li:last-child {
 }
 .crumbs__item.active {
   color: #d6b07d;
+  padding-right: 0px;
+  margin-right: 0px;
 }
 .crumbs__item.active::after {
   display: none;
@@ -1092,6 +1115,15 @@ ul li:last-child {
 .big-menu.gold .info,
 .big-menu.gold .form,
 .big-menu.gold .logo {
+  color: black;
+}
+.big-menu.gold .item.header__options {
+  color: black;
+}
+.big-menu.gold .item.header__options img {
+  filter: invert(1);
+}
+.big-menu.gold .item.header__options .header__link {
   color: black;
 }
 
@@ -1309,6 +1341,9 @@ ul li:last-child {
   border-bottom: 8px solid transparent;
   border-left: 15px solid #dd2a1b;
 }
+.big-menu__footer .item.header__options {
+  display: none;
+}
 .big-menu__footer .partners {
   margin-top: 50px;
   text-transform: uppercase;
@@ -1459,11 +1494,13 @@ ul li:last-child {
   }
   .big-menu__footer .item {
     padding: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
   }
 }
 @media (max-width: 768px) {
   .big-burger .burger {
-    width: 35px;
+    width: 55px;
   }
 }
 @media (max-width: 576px) {
@@ -1491,6 +1528,9 @@ ul li:last-child {
   .big-menu__footer {
     max-width: 100%;
   }
+  .big-menu__footer .item.header__options {
+    display: block;
+  }
   .big-menu a {
     word-break: break-word;
   }
@@ -1503,6 +1543,18 @@ ul li:last-child {
   .big-menu .tablink {
     padding: 7px 0;
     min-width: 100px;
+  }
+  .big-menu .logo {
+    display: none;
+  }
+  .big-menu .big-burger {
+    top: 0;
+  }
+  .big-menu .tab-control {
+    padding-top: 125px;
+  }
+  .navigation__burger {
+    display: none;
   }
 }
 .intro {
@@ -1898,6 +1950,28 @@ section.multimedia__footer {
   }
   .business .tech-outer .item {
     margin-right: 20px;
+  }
+  .business .arrow-up-btn:hover .arrow {
+    border-right-color: #dd2a1b;
+  }
+  .business .arrow-down-btn:hover .arrow {
+    border-left-color: #dd2a1b;
+  }
+  .business .arrow-up-btn .arrow {
+    top: 20px;
+    left: 10px;
+    transform: none;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 17px solid white;
+  }
+  .business .arrow-down-btn .arrow {
+    top: 20px;
+    left: 25px;
+    transform: none;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 17px solid white;
   }
   .business-power__title {
     font-size: 70px;

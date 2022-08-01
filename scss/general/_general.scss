@@ -702,14 +702,25 @@ ul{
 
 .link__underline
 {
-    .overlay{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background: #dd2a1b;
+        width: 0;
+        transition: 0.3s;
+        z-index: 10;
+    }
+
+    &:hover{
         &::after{
-            display: block;
-            content: "";
-            border-bottom: 10px solid $red;
-            transform: scaleX(0);
-            transition: transform 0.2s ease-in-out;
-        }    
+            width: 100%;
+        }
+
     }
 
     
@@ -813,6 +824,14 @@ ul{
         background-color: transparent;
         cursor: pointer;
         z-index: 15;
+        border: 2px solid white;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+
+        &:hover{
+            background-color: white;
+        }
+       
         
         svg#play {
             width:100%;

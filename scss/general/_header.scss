@@ -32,6 +32,7 @@ $gold: #d6b07d;
         flex: 1;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         flex-wrap: wrap;
         transition: all 0.2s ease-in-out;
     }
@@ -80,7 +81,9 @@ $gold: #d6b07d;
         }
 
         .search-option{
-
+            img{
+                vertical-align: bottom;
+            }
         }
 
         .dropdown-btn{
@@ -143,7 +146,7 @@ $gold: #d6b07d;
             }
         }
 
-        #text-options
+        .text-options
         {
             &__small{
                 font-size: 18px;
@@ -176,10 +179,10 @@ $gold: #d6b07d;
     &__item{
         text-transform: uppercase;
         color: $red;
-        font-size: 19px;
+        font-size: 16px;
         font-weight: bold;
-        padding-right: 30px;
-        margin-right: 20px;
+        padding-right: 20px;
+        margin-right: 10px;       
         position: relative;
 
         &::after{
@@ -200,8 +203,13 @@ $gold: #d6b07d;
         }
     }
 
+    &__item + &__item{
+    }
+
     &__item.active{
         color: $gold;
+        padding-right: 0px;
+        margin-right: 0px;    
 
         &::after{
             display: none;
@@ -275,6 +283,20 @@ $gold: #d6b07d;
     .logo{
         color: black;
     }
+
+    .item.header__options{
+        color:black;  
+
+        img{
+            filter: invert(1);
+        }
+
+        .header__link{
+            color: black;
+        }
+    }
+
+
 
 }
 
@@ -566,6 +588,11 @@ $gold: #d6b07d;
             }
         }
 
+        .item.header__options
+        {
+            display: none;
+        }
+
         .partners
         {
             margin-top: 50px;
@@ -805,6 +832,8 @@ $gold: #d6b07d;
     {
         .item{
             padding: 20px;
+            padding-top: 30px;
+            padding-left: 40px;
         }
     }
   }
@@ -815,7 +844,7 @@ $gold: #d6b07d;
     .big-burger
     {
         .burger{
-            width: 35px;
+            width: 55px;
         }
     }
 }
@@ -855,7 +884,12 @@ $gold: #d6b07d;
 
         &__footer
         {
-            max-width: 100%;        
+            max-width: 100%; 
+            
+            .item.header__options
+            {
+                display: block;
+            }
         }
 
         a{
@@ -874,5 +908,22 @@ $gold: #d6b07d;
             min-width: 100px;
         }
 
+        .logo{
+            display: none;
+        }
+
+        .big-burger{
+            top: 0;
+        }
+
+        .tab-control{
+            padding-top: 125px;
+        }
+
+       
+    }
+
+    .navigation__burger{
+        display: none;
     }
 }

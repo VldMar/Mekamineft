@@ -110,6 +110,8 @@ $gold: #d6b07d;
     flex-direction: column;
     //height: 700px;
     border-bottom: 2px solid $red;
+    
+    color: black;
 
     &__img{
         height: 400px;        
@@ -169,37 +171,33 @@ $gold: #d6b07d;
     .open
     {
         padding: 30px 0;
+        padding-left: 30px;
         font-size: 17px;
         font-weight: bold;
         visibility: collapse;
+        text-transform: uppercase;
+        position: relative;
+        color: $gold;
+        text-align: left;
 
-        a{
-            text-transform: uppercase;
-            position: relative;
-            color: $gold;
-
-            &:hover{
-                color: $red;
-            }
+        &:hover{
+            color: $red;
+            cursor: pointer;
         }
 
-        .read{
-            padding-left: 30px; 
-
-            &::before{
-                content: "";
-                display: block;
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-60%);
-                width: 0; 
-                height: 0; 
-                border-top: 8px solid transparent;
-                border-bottom: 8px solid transparent;
-                
-                border-left: 15px solid $red;
-            }
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-60%);
+            width: 0; 
+            height: 0; 
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            
+            border-left: 15px solid $red;
         }
 
     }
@@ -220,23 +218,38 @@ $gold: #d6b07d;
     height: 380px;
     transition: border 0.1s ease;
 
-    &:hover{
-        border-bottom: 8px solid $red;
-    }
-
     .media__button{
         padding:4px 14px;
+    }
+}
+
+.news,
+.interview{
+    &::after{
+        content: '';
+        position: absolute;
+        height: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background: #dd2a1b;
+        width: 0;
+        transition: 0.3s;
+        z-index: 10;
+    }
+
+    &:hover{
+        &::after{
+            width: 100%;
+        }
+
     }
 }
 
 .news
 {
     height: 500px; 
-    
-    &:hover{
-        border-bottom: 8px solid $red;
-
-    }
+    position: relative;
 
     .btn{
         padding: 4px 14px;
@@ -297,6 +310,11 @@ $gold: #d6b07d;
             cursor: pointer;
             background-color: $red;
             color: white;
+
+            &::after{
+                
+            filter: brightness(.0) invert(1);
+            }
         }
     }
 }

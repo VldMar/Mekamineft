@@ -149,6 +149,9 @@
 
 @media (max-width: 700px){
     .community-intro{
+        .img-employees{
+            margin-top: -20px;
+        }
         &__footer{
             display: none;
         }

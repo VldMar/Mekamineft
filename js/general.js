@@ -97,35 +97,35 @@ $(document).ready(function()
     let sizeStep = 4;
     let size = $('body').css('font-size');
     let sizeInt = parseInt(size);
-   $('#text-options__small').click(function(){
+   $('.text-options__small').click(function(){
     if($(this).hasClass('text-size-active'))
         return;
         $('body').css('font-size', sizeInt - sizeStep);
 
-        $('#text-options__small').addClass('text-size-active');
-        $('#text-options__normal').removeClass('text-size-active');
-        $('#text-options__large').removeClass('text-size-active');
+        $('.text-options__small').addClass('text-size-active');
+        $('.text-options__normal').removeClass('text-size-active');
+        $('.text-options__large').removeClass('text-size-active');
    });
-   $('#text-options__normal').click(function(){
+   $('.text-options__normal').click(function(){
     if($(this).hasClass('text-size-active'))
         return;
         $('body').css('font-size', sizeInt);
 
         
-        $('#text-options__normal').addClass('text-size-active');
-        $('#text-options__small').removeClass('text-size-active');
-        $('#text-options__large').removeClass('text-size-active');
+        $('.text-options__normal').addClass('text-size-active');
+        $('.text-options__small').removeClass('text-size-active');
+        $('.text-options__large').removeClass('text-size-active');
    });
-   $('#text-options__large').click(function(){
+   $('.text-options__large').click(function(){
     if($(this).hasClass('text-size-active'))
         return;
 
     $('body').css('font-size', sizeInt + sizeStep);
 
     
-    $('#text-options__large').addClass('text-size-active');
-    $('#text-options__normal').removeClass('text-size-active');
-    $('#text-options__small').removeClass('text-size-active');
+    $('.text-options__large').addClass('text-size-active');
+    $('.text-options__normal').removeClass('text-size-active');
+    $('.text-options__small').removeClass('text-size-active');
    });
 
 })     

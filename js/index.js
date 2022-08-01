@@ -20,6 +20,7 @@ $(document).ready(function()
 
     
     $('.media__play-button').simpleLightbox();
+    $('.play-btn').simpleLightbox();
 
     let carouselPrev = $('.tech-prev');
     let carouselNext = $('.tech-next');
