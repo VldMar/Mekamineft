@@ -722,19 +722,26 @@ $gold: #d6b07d;
 
 @media (max-width: 992px){
     
-   .burger{
-    display: block;
-   }
+   
 
     .big-menu{
         .tab-control{
             &__buttons
             {
                 flex-wrap: wrap;
+                overflow-x: initial;
             }
 
             &__content{
                 margin-left: 70px;
+            }
+        }
+
+        &__footer
+        {
+            .item.header__options
+            {
+                display: block;
             }
         }
     }
@@ -885,11 +892,6 @@ $gold: #d6b07d;
         &__footer
         {
             max-width: 100%; 
-            
-            .item.header__options
-            {
-                display: block;
-            }
         }
 
         a{
@@ -921,9 +923,5 @@ $gold: #d6b07d;
         }
 
        
-    }
-
-    .navigation__burger{
-        display: none;
     }
 }

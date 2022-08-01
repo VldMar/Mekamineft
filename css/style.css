@@ -1413,14 +1413,15 @@ ul li:last-child {
   }
 }
 @media (max-width: 992px) {
-  .burger {
-    display: block;
-  }
   .big-menu .tab-control__buttons {
     flex-wrap: wrap;
+    overflow-x: initial;
   }
   .big-menu .tab-control__content {
     margin-left: 70px;
+  }
+  .big-menu__footer .item.header__options {
+    display: block;
   }
   .header {
     padding-top: 40px;
@@ -1528,9 +1529,6 @@ ul li:last-child {
   .big-menu__footer {
     max-width: 100%;
   }
-  .big-menu__footer .item.header__options {
-    display: block;
-  }
   .big-menu a {
     word-break: break-word;
   }
@@ -1552,9 +1550,6 @@ ul li:last-child {
   }
   .big-menu .tab-control {
     padding-top: 125px;
-  }
-  .navigation__burger {
-    display: none;
   }
 }
 .intro {
