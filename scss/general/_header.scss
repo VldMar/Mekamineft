@@ -204,9 +204,6 @@ $gold: #d6b07d;
         }
     }
 
-    &__item + &__item{
-    }
-
     &__item.active{
         color: $gold;
         padding-right: 0px;
