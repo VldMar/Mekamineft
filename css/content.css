@@ -105,6 +105,9 @@ body {
   font-family: "Calibri";
   font-size: 18px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 button,
@@ -814,11 +817,19 @@ ul li:last-child {
   transform-origin: 50% 50%;
 }
 
-.footer {
+.footer.absolute {
   position: absolute;
-  width: 100%;
-  height: 35px;
+  padding-bottom: 0;
   bottom: 35px;
+}
+
+.footer.black {
+  background-color: #000;
+}
+
+.footer {
+  width: 100%;
+  padding-bottom: 35px;
 }
 .footer .play-btn {
   margin-right: 256px;
@@ -883,6 +894,8 @@ ul li:last-child {
 .header {
   padding-top: 56px;
   color: white;
+  z-index: 100;
+  width: 100%;
 }
 .header__body {
   display: flex;
@@ -961,6 +974,8 @@ ul li:last-child {
   transition: opacity 0.4s ease;
   z-index: 100;
   padding: 5px;
+  width: 50px;
+  text-align: center;
 }
 .header__options .dropdown-btn .dropdown a {
   font-size: 20px;
@@ -995,6 +1010,10 @@ ul li:last-child {
 }
 .header__options .text-options__large {
   font-size: 22px;
+}
+
+.header.absolute {
+  position: absolute;
 }
 
 .bread-crumbs {
@@ -1043,7 +1062,7 @@ ul li:last-child {
 .header.black {
   color: black;
 }
-.header.black .link {
+.header.black .header__nav .link {
   color: black;
 }
 
@@ -1099,6 +1118,16 @@ ul li:last-child {
 }
 .big-menu.gold .item.header__options .header__link {
   color: black;
+}
+.big-menu.gold .tabcontent__title {
+  color: black;
+}
+.big-menu.gold .tab-control__content .item .title,
+.big-menu.gold .tab-control__content .subitem .title {
+  color: #dd2a1b;
+}
+.big-menu.gold .tab-control__content .item, .big-menu.gold .tab-control__content .subitem {
+  border-top: 1px solid black;
 }
 
 .soc {
@@ -1181,6 +1210,7 @@ ul li:last-child {
 }
 .big-menu .tab-control__buttons {
   flex-direction: column;
+  max-width: 300px;
 }
 .big-menu .tab-control__content {
   display: flex;
@@ -1338,6 +1368,11 @@ ul li:last-child {
 .big-menu.gold {
   background: #d6b07d;
 }
+.big-menu.gold .burger span,
+.big-menu.gold .burger span::before,
+.big-menu.gold .burger span::after {
+  background: black;
+}
 
 @media (max-width: 1500px) {
   .big-menu .tablink {
@@ -1401,7 +1436,7 @@ ul li:last-child {
     padding-top: 40px;
   }
   .header .link {
-    color: white !important;
+    color: white;
   }
   .header__navigation {
     display: flex;
@@ -1458,6 +1493,7 @@ ul li:last-child {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 10px;
+    max-width: 100%;
   }
   .big-menu .tab-control .tabcontent {
     width: 100%;
@@ -1592,8 +1628,8 @@ ul li:last-child {
 
 .content {
   color: #000;
-  min-height: calc(100vh - 240px);
-  padding-bottom: 60px;
+  flex: 1 1 auto;
+  padding: 20px 0;
 }
 .content__title {
   font-size: 55px;

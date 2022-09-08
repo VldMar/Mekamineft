@@ -11,141 +11,74 @@
     <link rel="stylesheet" href="css/community.css">
 </head>
 <body>
-    <section class="section community-intro">
-        <header class="header black community-intro__header">
-            <div class="container-wide">
-                <div class="header__body">
-                    <div class="header__logo">
-                        <a href="index.html" class="logo">
-                            <img src="img/logo-black.png" alt="logo-img">
-                        </a>                        
-                        
-                        <div class="big-burger">
-                            <button class="burger black">
-                                <span></span>
+    <header class="header black absolute">
+        <div class="container-wide">
+            <div class="header__body">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo-black.png" alt="logo-img">
+                    </a>                        
+                    
+                    <div class="big-burger">
+                        <button class="burger burger-open black">
+                            <span></span>
+                        </button>
+                    </div>                            
+                </div>
+
+                <div class="header__navigation">
+                    <nav class="header__nav">
+                        <ul>
+                            <li><a href="Interviews.html" class="link header__link">о нас</a></li>
+                            <li><a href="Presentations.html" class="link header__link">лаборатория будущего</a></li>
+                            <li><a href="Photogallery.html" class="link header__link">медиа-центр</a></li>
+                            <li><a href="News.html" class="link header__link">вакансии</a></li>
+                            <li><a href="Presentations.html" class="link header__link">контакты</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__options">
+                        <div class="option search-option">
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 992px)" srcset="img/Lupa.png">
+                                    <img src="img/lupa-black.png" alt="search-icon">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="option language-option dropdown-btn">
+                            <button href="#"  class="link header__link ">
+                                ru &dtrif;                                   
                             </button>
-                        </div>                            
-                    </div>
-
-                    <div class="header__navigation">
-                        <nav class="header__nav">
-                            <ul>
-                                <li><a href="Interviews.html" class="link header__link">о нас</a></li>
-                                <li><a href="Presentations.html" class="link header__link">лаборатория будущего</a></li>
-                                <li><a href="Photogallery.html" class="link header__link">медиа-центр</a></li>
-                                <li><a href="News.html" class="link header__link">вакансии</a></li>
-                                <li><a href="Presentations.html" class="link header__link">контакты</a></li>
-                            </ul>
-                        </nav>
-
-                        <div class="header__options">
-                            <div class="option search-option">
-                                <a href="#">
-                                    <picture>
-                                        <source media="(max-width: 992px)" srcset="img/Lupa.png">
-                                        <img src="img/lupa-black.png" alt="search-icon">
-                                    </picture>
-                                </a>
-                            </div>
-                            <div class="option language-option dropdown-btn">
-                                <button href="#"  class="link header__link ">
-                                    ru &dtrif;                                   
-                                </button>
-                                <ul class="dropdown">
-                                    <li><a href="#">RU</a></li>
-                                    <li><a href="#">EN</a></li>
-                            </ul>
-                            </div>
-                           
-                            <div class="option text-size-option">
-                                <button class="text-size text-options__small">м</button>
-                                <button class="text-size text-options__normal text-size-active ">м</button>
-                                <button class="text-size text-options__large">м</button>    
-                            </div>
-
-                        </div>                           
-                    </div>
-
-                    <button class="navigation__burger burger black">
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </header>
-
-
-        <div class="community-intro__content">
-            <div class="container-medium">
-                <h1 class="big-title">сообщество</h1>                
-                <picture>
-                    <source media="(max-width: 1200px)" srcset="img/people-1152.png">
-                    <source media="(max-width: 992px)" srcset="img/people-800.png">
-                    <source media="(max-width: 768px)" srcset="img/people-500.png">
-                    <img src="img/people.png" alt="employees-img" class="img-employees">
-                </picture>
-            </div>
-            <div class="community-intro__inner">
-                <div class="container-wide search">
-                    <div class="container-medium ">
-                        <h2 class="subtitle">в котором формируешься и развиваешься</h2>
-                        <h3 class="search-title">поиск вакансии</h3>
-                        <div class="community-intro__form">
-                            <form action="">
-                                <div class="inputs">
-                                    <select class="btn white selector item" name="" id="" aria-placeholder="Выберите город">
-                                        <option value="1" disabled selected class="disabled">Выберите город</option>
-                                        <option value="2">москва</option>
-                                        <option value="3">москва</option>
-                                        <option value="4">москва</option>
-                                        <option value="5">москва</option>
-                                    </select>
-                                    <select class="btn white selector item" name="" id="" aria-placeholder="Выберите категорию специальности">
-                                        <option value="1" disabled selected class="disabled">Выберите категорию специальности</option>
-                                        <option value="2">москва</option>
-                                        <option value="3">москва</option>
-                                        <option value="4">москва</option>
-                                        <option value="5">москва</option>
-                                    </select>
-                                    <input type="text" class="btn white selector item" placeholder="Введите название специальности"></input>
-                                </div>
-                                <button class="btn white wide submit" type="submit">Искать</button>
-                            </form>
-                            <div class="filters"></div>                        
+                            <ul class="dropdown">
+                                <li><a href="#">RU</a></li>
+                                <li><a href="#">EN</a></li>
+                        </ul>
                         </div>
-            
-                    </div>
-                </div>
-               
-        
-                <div class="footer community-intro__footer">
-                    <div class="container-medium">
-                        <div class="footer__body">
-                                                       
-                            <a href="tel:+73464340201" class="link tel">8(34643)40-201</a>
-        
-                            <div class="footer__item-last">
-                                <ul class="soc">
-                                    <li><a href="#"><img src="img/social_white.png" alt="social_red"></a></li>
-                                    <li><a href="#"><img src="img/social_r.png" alt="social_r"></a></li>
-                                    <li><a href="#"><img src="img/social_telegram.png" alt="social_telegram"></a></li>
-                                    <li><a href="#"><img src="img/social_whatsapp.png" alt="social_whatsapp"></a></li>
-                                </ul>
-                            </div>
+                       
+                        <div class="option text-size-option">
+                            <button class="text-size text-options__small">м</button>
+                            <button class="text-size text-options__normal text-size-active ">м</button>
+                            <button class="text-size text-options__large">м</button>    
                         </div>
-                    </div>
+
+                    </div>                           
                 </div>
+
+                <button class="navigation__burger burger black">
+                    <span></span>
+                </button>
             </div>
-            
         </div>
 
         <div class="big-menu gold">
             <div class="container container-wide">
                 <div class="header__logo">
                     <a href="#" class="logo">
-                        МеКаМинефть
+                      МеКаМинефть
                     </a>
                     <div class="big-burger">
-                        <button class="burger black burger__active">
+                        <button class="burger burger__active burger-close">
                             <span></span>
                         </button>
                     </div>                            
@@ -262,7 +195,7 @@
                           </ul>
                             </div>                                
                         </div>
-
+    
                         <div class="tabcontent ">
                           <div class="tabcontent__title">
                               медиа
@@ -413,7 +346,7 @@
                           </ul>
                             </div>                                  
                         </div>                          
-                    </div>                       
+                    </div>                
                 </div>
                 <div class="big-menu__footer">
                     <div class="item header__options">
@@ -438,7 +371,7 @@
                             <button class="text-size text-options__large">м</button>    
                         </div>
     
-                    </div>    
+                    </div>  
                     <div class="item contacts">
                         <ul>
                             <li><a href="">ЗАО СП МиКаМиНефть</a></li>
@@ -447,12 +380,12 @@
                             <li><a href="">Факс: 8 800 555 35 3</a></li>
                             <li><a href="">Маил: mecamineft@mecamineft.com</a></li>
                         </ul>
-
+    
                         <ul class="soc">
-                            <li><a href="#"><img src="img/social1-black.png" alt="social1"></a></li>
-                            <li><a href="#"><img src="img/social2-black.png" alt="social2"></a></li>
-                            <li><a href="#"><img src="img/social3-black.png" alt="social3"></a></li>
-                            <li><a href="#"><img src="img/social4-black.png" alt="social4"></a></li>
+                            <li><a href="#"><img src="img/social_red.png" alt="social_red"></a></li>
+                            <li><a href="#"><img src="img/social_r.png" alt="social_r"></a></li>
+                            <li><a href="#"><img src="img/social_telegram.png" alt="social_telegram"></a></li>
+                            <li><a href="#"><img src="img/social_whatsapp.png" alt="social_whatsapp"></a></li>
                         </ul>
                     </div>
                     <div class="item form">
@@ -466,7 +399,7 @@
                             <p>сайты партнеров:</p>
                         </div>
                         
-
+    
                     </div>
                     <div class="item politic">
                         <ul>
@@ -480,197 +413,263 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="section business-power">
-        <div class="container business-power__inner">
-            <h3 class="title">
-                ЗАО СПК МеКаМинефть
-            </h3>
-
-            <div class="business-power__row flex-row">
-                <div class="business-power__item">
-                    <h3 class="business-power__title text-center">2 100</h3>
-                    <p class="business-power__descr text-center">человек – трудоустроено 
-                        в ЗАО «СП «МеКаМинефть»</p>
-                    <img src="img/ico1.png" alt="" class="business-power__icon">
+    </header>
+    <main class="content">
+        <section class="section community-intro">
+            <div class="community-intro__content">
+                <div class="container-medium">
+                    <h1 class="big-title">сообщество</h1>                
+                    <picture>
+                        <source media="(max-width: 1200px)" srcset="img/people-1152.png">
+                        <source media="(max-width: 992px)" srcset="img/people-800.png">
+                        <source media="(max-width: 768px)" srcset="img/people-500.png">
+                        <img src="img/people.png" alt="employees-img" class="img-employees">
+                    </picture>
                 </div>
-                <div class="business-power__item">
-                    <h3 class="business-power__title text-center">23</h3>
-                    <p class="business-power__descr text-center">комплекса ГРП с широким 
-                        спектром применения</p>
-                    <img src="img/ico2.png" alt="" class="business-power__icon">
+                <div class="community-intro__inner">
+                    <div class="container-wide search">
+                        <div class="container-medium ">
+                            <h2 class="subtitle">в котором формируешься и развиваешься</h2>
+                            <h3 class="search-title">поиск вакансии</h3>
+                            <div class="community-intro__form">
+                                <form action="">
+                                    <div class="inputs">
+                                        <select class="btn white selector item" name="" id="" aria-placeholder="Выберите город">
+                                            <option value="1" disabled selected class="disabled">Выберите город</option>
+                                            <option value="2">москва</option>
+                                            <option value="3">москва</option>
+                                            <option value="4">москва</option>
+                                            <option value="5">москва</option>
+                                        </select>
+                                        <select class="btn white selector item" name="" id="" aria-placeholder="Выберите категорию специальности">
+                                            <option value="1" disabled selected class="disabled">Выберите категорию специальности</option>
+                                            <option value="2">москва</option>
+                                            <option value="3">москва</option>
+                                            <option value="4">москва</option>
+                                            <option value="5">москва</option>
+                                        </select>
+                                        <input type="text" class="btn white selector item" placeholder="Введите название специальности"></input>
+                                    </div>
+                                    <button class="btn white wide submit" type="submit">Искать</button>
+                                </form>
+                                <div class="filters"></div>                        
+                            </div>
+                
+                        </div>
+                    </div>
+                   
+            
+                    <div class="footer community-intro__footer absolute">
+                        <div class="container-medium">
+                            <div class="footer__body">
+                                                           
+                                <a href="tel:+73464340201" class="link tel">8(34643)40-201</a>
+            
+                                <div class="footer__item-last">
+                                    <ul class="soc">
+                                        <li><a href="#"><img src="img/social_white.png" alt="social_red"></a></li>
+                                        <li><a href="#"><img src="img/social_r.png" alt="social_r"></a></li>
+                                        <li><a href="#"><img src="img/social_telegram.png" alt="social_telegram"></a></li>
+                                        <li><a href="#"><img src="img/social_whatsapp.png" alt="social_whatsapp"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="business-power__item">
-                    <h3 class="business-power__title text-center">752</h3>
-                    <p class="business-power__descr text-center">транспортной техники
-                        на балансе компании</p>
-                        
-                    <img src="img/ico3.png" alt="" class="business-power__icon">
-                </div>
+                
             </div>
-
-            <a href="" class="btn wide black">ознакомьтесь с историей компании</a>
-        </div>
-    </section>
-
-    <section class="section info">
-        <div class="back-media">
-             <!--  <video class="back-media__video" src="video/main_video.mp4" autoplay muted loop></video> -->
-        </div>
-        <div class="container">
-            <p class="info__text">
-                ЗАО «СП «МеКаМинефть» создает условия для карьерного и профессионального роста сотрудников, а также активно развивает направления, способствующие формированию и поддержанию высокого уровня вовлеченности и эффективности команды. 
-            </p>
-        </div>
-    </section>
-
-    <section class="section stories">
-        <div class="container-wide">
-            <h3 class="title">
-                Истории
-            </h3>
-
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="stories__card">
-                        <div class="photo">
-                            <img src="img/hist1.jpg" alt="hist1" class="img">
-                        </div>
-                        <h4 class="title">Имя Фамилия</h4>
-                        <div class="tags-block">
-                            <button class="btn gold">Молодой специалист</button>
-                            <button class="btn gold">Ветеран меками</button>
-                            <button class="btn gold">Интервью</button>
-                        </div>
-                    </div>
-                </div>  
-                <div class="item">
-                    <div class="stories__card">
-                        <div class="photo">
-                            <img src="img/hist2.jpg" alt="hist2" class="img">
-                        </div>
-                        <h4 class="title">Имя Фамилия</h4>
-                        <div class="tags-block">
-                            <button class="btn gold">Молодой специалист</button>
-                            <button class="btn gold">Ветеран меками</button>
-                            <button class="btn gold">Интервью</button>
-                        </div>
-                    </div>
-                </div> 
-                <div class="item">
-                    <div class="stories__card">
-                        <div class="photo">
-                            <img src="img/hist3.jpg" alt="hist3" class="img">
-                        </div>
-                        <h4 class="title">Имя Фамилия</h4>
-                        <div class="tags-block">
-                            <button class="btn gold">Молодой специалист</button>
-                            <button class="btn gold">Ветеран меками</button>
-                            <button class="btn gold">Интервью</button>
-                        </div>
-                    </div>
-                </div>      
-                <div class="item">
-                    <div class="stories__card">
-                        <div class="photo">
-                            <img src="img/hist3.jpg" alt="hist4" class="img">
-                        </div>
-                        <h4 class="title">Имя Фамилия</h4>
-                        <div class="tags-block">
-                            <button class="btn gold">Молодой специалист</button>
-                            <button class="btn gold">Ветеран меками</button>
-                            <button class="btn gold">Интервью</button>
-                        </div>
-                    </div>
-                </div>      
-                <div class="item">
-                    <div class="stories__card">
-                        <div class="photo">
-                            <img src="img/hist3.jpg" alt="hist5" class="img">
-                        </div>
-                        <h4 class="title">Имя Фамилия</h4>
-                        <div class="tags-block">
-                            <button class="btn gold">Молодой специалист</button>
-                            <button class="btn gold">Ветеран меками</button>
-                            <button class="btn gold">Интервью</button>
-                        </div>
-                    </div>
-                </div>      
-                <div class="item">
-                    <div class="stories__card">
-                        <div class="photo">
-                            <img src="img/hist3.jpg" alt="hist6" class="img">
-                        </div>
-                        <h4 class="title">Имя Фамилия</h4>
-                        <div class="tags-block">
-                            <button class="btn gold">Молодой специалист</button>
-                            <button class="btn gold">Ветеран меками</button>
-                            <button class="btn gold">Интервью</button>
-                        </div>
-                    </div>
-                </div>      
-                <div class="item">
-                    <div class="stories__card">
-                        <div class="photo">
-                            <img src="img/hist3.jpg" alt="hist7" class="img">
-                        </div>
-                        <h4 class="title">Имя Фамилия</h4>
-                        <div class="tags-block">
-                            <button class="btn gold">Молодой специалист</button>
-                            <button class="btn gold">Ветеран меками</button>
-                            <button class="btn gold">Интервью</button>
-                        </div>
-                    </div>
-                </div>      
-                <div class="item">
-                    <div class="stories__card">
-                        <div class="photo">
-                            <img src="img/hist3.jpg" alt="hist3" class="img">
-                        </div>
-                        <h4 class="title">Имя Фамилия</h4>
-                        <div class="tags-block">
-                            <button class="btn gold">Молодой специалист</button>
-                            <button class="btn gold">Ветеран меками</button>
-                            <button class="btn gold">Интервью</button>
-                        </div>
-                    </div>
-                </div>      
-                <div class="item">
-                    <div class="stories__card">
-                        <div class="photo">
-                            <img src="img/hist3.jpg" alt="hist3" class="img">
-                        </div>
-                        <h4 class="title">Имя Фамилия</h4>
-                        <div class="tags-block">
-                            <button class="btn gold">Молодой специалист</button>
-                            <button class="btn gold">Ветеран меками</button>
-                            <button class="btn gold">Интервью</button>
-                        </div>
-                    </div>
-                </div>             
-            </div>
-        </div>
-
-        <div class="footer">
-            <div class="container-medium">
-                <div class="footer__body">
-                                               
-                    <a href="tel:+73464340201" class="link black tel">8(34643)40-201</a>
-
-                    <div class="footer__item-last">
-                        <ul class="soc">
-                            <li><a href="#"><img src="img/social1-black.png" alt="social_red"></a></li>
-                            <li><a href="#"><img src="img/social2-black.png" alt="social_r"></a></li>
-                            <li><a href="#"><img src="img/social3-black.png" alt="social_telegram"></a></li>
-                            <li><a href="#"><img src="img/social4-black.png" alt="social_whatsapp"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
     
+        <section class="section business-power">
+            <div class="container business-power__inner">
+                <h3 class="title">
+                    ЗАО СПК МеКаМинефть
+                </h3>
+    
+                <div class="business-power__row flex-row">
+                    <div class="business-power__item">
+                        <h3 class="business-power__title text-center">2 100</h3>
+                        <p class="business-power__descr text-center">человек – трудоустроено 
+                            в ЗАО «СП «МеКаМинефть»</p>
+                        <img src="img/ico1.png" alt="" class="business-power__icon">
+                    </div>
+                    <div class="business-power__item">
+                        <h3 class="business-power__title text-center">23</h3>
+                        <p class="business-power__descr text-center">комплекса ГРП с широким 
+                            спектром применения</p>
+                        <img src="img/ico2.png" alt="" class="business-power__icon">
+                    </div>
+                    <div class="business-power__item">
+                        <h3 class="business-power__title text-center">752</h3>
+                        <p class="business-power__descr text-center">транспортной техники
+                            на балансе компании</p>
+                            
+                        <img src="img/ico3.png" alt="" class="business-power__icon">
+                    </div>
+                </div>
+    
+                <a href="" class="btn wide black">ознакомьтесь с историей компании</a>
+            </div>
+        </section>
+    
+        <section class="section info">
+            <div class="back-media">
+                 <!--  <video class="back-media__video" src="video/main_video.mp4" autoplay muted loop></video> -->
+            </div>
+            <div class="container">
+                <p class="info__text">
+                    ЗАО «СП «МеКаМинефть» создает условия для карьерного и профессионального роста сотрудников, а также активно развивает направления, способствующие формированию и поддержанию высокого уровня вовлеченности и эффективности команды. 
+                </p>
+            </div>
+        </section>
+    
+        <section class="section stories">
+            <div class="container-wide">
+                <h3 class="title">
+                    Истории
+                </h3>
+    
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="stories__card">
+                            <div class="photo">
+                                <img src="img/hist1.jpg" alt="hist1" class="img">
+                            </div>
+                            <h4 class="title">Имя Фамилия</h4>
+                            <div class="tags-block">
+                                <button class="btn gold">Молодой специалист</button>
+                                <button class="btn gold">Ветеран меками</button>
+                                <button class="btn gold">Интервью</button>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="item">
+                        <div class="stories__card">
+                            <div class="photo">
+                                <img src="img/hist2.jpg" alt="hist2" class="img">
+                            </div>
+                            <h4 class="title">Имя Фамилия</h4>
+                            <div class="tags-block">
+                                <button class="btn gold">Молодой специалист</button>
+                                <button class="btn gold">Ветеран меками</button>
+                                <button class="btn gold">Интервью</button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="item">
+                        <div class="stories__card">
+                            <div class="photo">
+                                <img src="img/hist3.jpg" alt="hist3" class="img">
+                            </div>
+                            <h4 class="title">Имя Фамилия</h4>
+                            <div class="tags-block">
+                                <button class="btn gold">Молодой специалист</button>
+                                <button class="btn gold">Ветеран меками</button>
+                                <button class="btn gold">Интервью</button>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="item">
+                        <div class="stories__card">
+                            <div class="photo">
+                                <img src="img/hist3.jpg" alt="hist4" class="img">
+                            </div>
+                            <h4 class="title">Имя Фамилия</h4>
+                            <div class="tags-block">
+                                <button class="btn gold">Молодой специалист</button>
+                                <button class="btn gold">Ветеран меками</button>
+                                <button class="btn gold">Интервью</button>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="item">
+                        <div class="stories__card">
+                            <div class="photo">
+                                <img src="img/hist3.jpg" alt="hist5" class="img">
+                            </div>
+                            <h4 class="title">Имя Фамилия</h4>
+                            <div class="tags-block">
+                                <button class="btn gold">Молодой специалист</button>
+                                <button class="btn gold">Ветеран меками</button>
+                                <button class="btn gold">Интервью</button>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="item">
+                        <div class="stories__card">
+                            <div class="photo">
+                                <img src="img/hist3.jpg" alt="hist6" class="img">
+                            </div>
+                            <h4 class="title">Имя Фамилия</h4>
+                            <div class="tags-block">
+                                <button class="btn gold">Молодой специалист</button>
+                                <button class="btn gold">Ветеран меками</button>
+                                <button class="btn gold">Интервью</button>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="item">
+                        <div class="stories__card">
+                            <div class="photo">
+                                <img src="img/hist3.jpg" alt="hist7" class="img">
+                            </div>
+                            <h4 class="title">Имя Фамилия</h4>
+                            <div class="tags-block">
+                                <button class="btn gold">Молодой специалист</button>
+                                <button class="btn gold">Ветеран меками</button>
+                                <button class="btn gold">Интервью</button>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="item">
+                        <div class="stories__card">
+                            <div class="photo">
+                                <img src="img/hist3.jpg" alt="hist3" class="img">
+                            </div>
+                            <h4 class="title">Имя Фамилия</h4>
+                            <div class="tags-block">
+                                <button class="btn gold">Молодой специалист</button>
+                                <button class="btn gold">Ветеран меками</button>
+                                <button class="btn gold">Интервью</button>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="item">
+                        <div class="stories__card">
+                            <div class="photo">
+                                <img src="img/hist3.jpg" alt="hist3" class="img">
+                            </div>
+                            <h4 class="title">Имя Фамилия</h4>
+                            <div class="tags-block">
+                                <button class="btn gold">Молодой специалист</button>
+                                <button class="btn gold">Ветеран меками</button>
+                                <button class="btn gold">Интервью</button>
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-wide">
+            <div class="footer__body">
+                                           
+                <a href="tel:+73464340201" class="link black tel">8(34643)40-201</a>
+
+                <div class="footer__item-last">
+                    <ul class="soc">
+                        <li><a href="#"><img src="img/social1-black.png" alt="social_red"></a></li>
+                        <li><a href="#"><img src="img/social2-black.png" alt="social_r"></a></li>
+                        <li><a href="#"><img src="img/social3-black.png" alt="social_telegram"></a></li>
+                        <li><a href="#"><img src="img/social4-black.png" alt="social_whatsapp"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.fittext.js"></script>

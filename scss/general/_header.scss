@@ -5,6 +5,8 @@ $gold: #d6b07d;
 {
     padding-top: 56px;
     color: white;
+    z-index: 100;
+    width: 100%;
 
     &__body{
         display: flex;
@@ -105,6 +107,8 @@ $gold: #d6b07d;
                 transition: opacity 0.4s ease;
                 z-index: 100;
                 padding: 5px;
+                width: 50px;
+                text-align: center;
 
                 a{
                     font-size: 20px;
@@ -165,6 +169,11 @@ $gold: #d6b07d;
     }
 
 }
+
+.header.absolute{
+    position: absolute;
+}
+
 .bread-crumbs
 {
     display: flex;
@@ -219,9 +228,14 @@ $gold: #d6b07d;
 {
     color: black;
 
-    .link{
-        color: black;
+    .header__nav{
+        .link{
+            color: black;
+        }
     }
+    
+
+    
 }
 
 .logo{
@@ -294,7 +308,20 @@ $gold: #d6b07d;
         }
     }
 
+    .tabcontent__title{
+        color: black;
+    }
 
+    .tab-control__content{
+        .item .title,
+        .subitem .title{
+            color: $red;
+        }
+
+        .item, .subitem{
+            border-top: 1px solid black;
+        }
+    }
 
 }
 
@@ -403,6 +430,7 @@ $gold: #d6b07d;
         &__buttons
         {
             flex-direction: column;
+            max-width: 300px;
         }
 
         &__content
@@ -619,6 +647,11 @@ $gold: #d6b07d;
 
 .big-menu.gold{
     background: $gold;
+    .burger span,
+    .burger span::before,
+    .burger span::after{
+        background: black;
+    }
 }
 
 @media (max-width: 1500px){
@@ -749,7 +782,7 @@ $gold: #d6b07d;
         padding-top: 40px;
 
         .link{
-            color: white !important;
+            color: white;
         }
 
         &__navigation
@@ -821,6 +854,7 @@ $gold: #d6b07d;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 10px;
+    max-width: 100%;
   }
   .big-menu .tab-control .tabcontent {
     width: 100%;

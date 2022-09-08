@@ -79,11 +79,11 @@ $(document).ready(function()
     });
    
     // открытие менюшек
-    $(".header .big-burger .burger").click(function() {
+    $(".header .burger-open").click(function() {
         $(".big-menu").toggleClass('active');
     })
    
-    $(".big-menu .burger").click(function() {
+    $(".big-menu .burger-close").click(function() {
         $(".big-menu").toggleClass('active');
     })
     

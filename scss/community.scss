@@ -6,10 +6,6 @@ $gold: #d6b07d;
 @import 'general/_header.scss';
 @import 'general/_container.scss';
 
-.section{
-    padding-bottom: 0 !important;
-}
-
 
 .big-menu{
     .tabcontent__title{
@@ -25,6 +21,7 @@ $gold: #d6b07d;
     background-size: cover;
     text-align: center;
     min-height: 100vh;
+    padding-top: 150px;
 
     &::after{
         content: "";
@@ -35,14 +32,6 @@ $gold: #d6b07d;
             width: 100%;
             height: 70px;
             background: linear-gradient(to bottom, $red, 70%, rgba(203, 39, 34, 0.0));
-    }
-
-    &__header{
-        color: black;
-
-        .link{
-            color: black;
-        }
     }
 
     .img-employees{
@@ -79,7 +68,7 @@ $gold: #d6b07d;
 
     &__footer{
         //margin-top: -100px;
-        bottom: 60px;
+        bottom: 60px !important;
 
         .tel{
             &:hover{
@@ -139,15 +128,11 @@ $gold: #d6b07d;
         }
     }
 
-    input:hover input::placeholder{
-        color: $red;
-    }
-
-    
-
-    .footer
-    {
-        
+    input:hover{
+        &::placeholder{
+            color: $red;
+            opacity: 0.6;
+        }
     }
 }
 
@@ -259,8 +244,7 @@ section.info{
 
 .stories
 {
-    min-height: 100vh;
-    padding-bottom: 60px !important;
+    padding-bottom: 60px;
 
     &__card{
         text-align: center;

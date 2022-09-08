@@ -52,8 +52,8 @@ $gold: #d6b07d;
 .content
 {
     color: #000;
-    min-height: calc(100vh - 240px);
-    padding-bottom: 60px;
+    flex: 1 1 auto;
+    padding: 20px 0;
 
     &__title
     {
